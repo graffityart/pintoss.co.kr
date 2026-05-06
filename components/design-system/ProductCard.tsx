@@ -19,10 +19,10 @@ export interface ProductCardProps {
 
 export const ProductCard: React.FC<ProductCardProps> = ({
   brandLogo,
-  brandLogoAlt = '브랜드 로고',
-  productName = '상품명',
+  brandLogoAlt = '상품권 브랜드 로고',
+  productName = '상품권',
   price = '00,000원',
-  buttonText = '자세히 보기',
+  buttonText = '상품권 구매하기',
   selected = false,
   showButton = true,
   onClick,
@@ -33,41 +33,52 @@ export const ProductCard: React.FC<ProductCardProps> = ({
     <div
       onClick={onClick}
       className={cn(
-        'group bg-white rounded-[22px]',
+        'group relative overflow-hidden rounded-[24px]',
         'flex flex-col items-center justify-between gap-5',
+        'bg-gradient-to-b from-white to-[#F8FBFF]',
         'px-5 py-6 md:px-6 md:py-7',
         'box-border cursor-pointer',
-        'border border-[#DDE7F3]',
-        'shadow-[0_8px_24px_rgba(15,23,42,0.04)]',
+        'border border-[#D7E4F3]',
+        'shadow-[0_10px_28px_rgba(15,23,42,0.05)]',
         'transition-all duration-200',
-        'hover:-translate-y-1 hover:border-[#94A3B8] hover:shadow-[0_14px_34px_rgba(15,23,42,0.08)]',
+        'hover:-translate-y-1 hover:border-[#2563EB] hover:shadow-[0_18px_38px_rgba(37,99,235,0.12)]',
         selected &&
-          'border-[#0F172A] bg-[#F8FAFC] shadow-[0_14px_34px_rgba(15,23,42,0.10)]',
+          'border-[#2563EB] bg-[#EFF6FF] shadow-[0_18px_38px_rgba(37,99,235,0.16)]',
         className
       )}
     >
+      <div className="absolute right-4 top-4 rounded-full bg-[#EEF6FF] px-3 py-1 text-[11px] font-bold text-[#2563EB]">
+        GIFT
+      </div>
+
       {brandLogo ? (
-        <div className="relative h-[92px] w-[92px] shrink-0 overflow-hidden rounded-[18px] border border-[#EEF2F7] bg-[#F8FAFC] md:h-[108px] md:w-[108px]">
+        <div className="relative mt-4 h-[96px] w-[96px] shrink-0 overflow-hidden rounded-[22px] border border-[#E3ECF8] bg-white shadow-[inset_0_0_0_1px_rgba(255,255,255,0.8)] md:h-[112px] md:w-[112px]">
           <Image
             src={brandLogo}
             alt={brandLogoAlt}
             fill
-            className="object-contain p-[14px]"
+            className="object-contain p-[15px]"
           />
         </div>
       ) : (
-        <div className="flex h-[92px] w-[92px] shrink-0 items-center justify-center rounded-[18px] border border-[#EEF2F7] bg-[#F8FAFC] md:h-[108px] md:w-[108px]">
-          <span className="text-[13px] font-medium text-[#94A3B8]">로고</span>
+        <div className="mt-4 flex h-[96px] w-[96px] shrink-0 items-center justify-center rounded-[22px] border border-[#E3ECF8] bg-white md:h-[112px] md:w-[112px]">
+          <span className="text-[13px] font-semibold text-[#94A3B8]">
+            로고
+          </span>
         </div>
       )}
 
       <div className="flex w-full flex-col items-center gap-2 text-center">
-        <p className="w-full overflow-hidden text-ellipsis whitespace-nowrap text-[15px] font-semibold leading-[1.4] tracking-[-0.35px] text-[#334155] md:text-[17px]">
+        <p className="w-full overflow-hidden text-ellipsis whitespace-nowrap text-[15px] font-bold leading-[1.4] tracking-[-0.35px] text-[#1F2937] md:text-[17px]">
           {productName}
         </p>
 
-        <p className="w-full overflow-hidden text-ellipsis whitespace-nowrap text-[18px] font-extrabold leading-[1.3] tracking-[-0.45px] text-[#0F172A] md:text-[20px]">
+        <p className="w-full overflow-hidden text-ellipsis whitespace-nowrap text-[19px] font-black leading-[1.3] tracking-[-0.5px] text-[#0F172A] md:text-[22px]">
           {price}
+        </p>
+
+        <p className="text-[11px] font-medium text-[#64748B] md:text-[12px]">
+          휴대폰 결제 · 신용카드 결제 가능
         </p>
       </div>
 
@@ -78,13 +89,13 @@ export const ProductCard: React.FC<ProductCardProps> = ({
             onPurchaseClick?.();
           }}
           className={cn(
-            'w-full rounded-[14px]',
-            'px-5 py-3',
-            'text-[14px] font-bold tracking-[-0.3px] md:text-[15px]',
+            'w-full rounded-[16px]',
+            'px-5 py-3.5',
+            'text-[14px] font-extrabold tracking-[-0.3px] md:text-[15px]',
             'transition-all duration-200',
             selected
-              ? 'bg-[#0F172A] text-white hover:bg-[#1D4ED8]'
-              : 'border border-[#CBD5E1] bg-[#F8FAFC] text-[#334155] hover:border-[#0F172A] hover:bg-[#0F172A] hover:text-white'
+              ? 'bg-[#2563EB] text-white shadow-[0_10px_22px_rgba(37,99,235,0.24)] hover:bg-[#1D4ED8]'
+              : 'bg-[#0F172A] text-white shadow-[0_10px_22px_rgba(15,23,42,0.16)] hover:bg-[#2563EB] hover:shadow-[0_12px_26px_rgba(37,99,235,0.24)]'
           )}
         >
           {buttonText}
