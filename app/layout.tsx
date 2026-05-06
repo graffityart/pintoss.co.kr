@@ -11,7 +11,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://pintoss.co.kr"),
   title: {
-    default: "핸드폰 소액결제|컬쳐랜드,온라인 문화상품권 구매 다양한 결제 상품권 현금화",
+    default: "핸드폰 소액결제 | 컬쳐랜드,온라인 문화상품권 구매 다양한 결제 상품권 현금화",
     template: "%s | PINTOSS MALL",
   },
   description:
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
   other: {},
 },
   openGraph: {
-    title: "핸드폰 소액결제|컬쳐랜드,온라인 문화상품권 구매 다양한 결제 상품권 현금화",
+    title: "핸드폰 소액결제 | 컬쳐랜드,온라인 문화상품권 구매 다양한 결제 상품권 현금화",
     description:
       "핸드폰 소액결제 신용카드, 핸드폰결제 전용 24시간 실시간발권 신세계상품권,컬쳐랜드상품권,문화상품권등을 실시간 발권합니다",
     url: "https://pintoss.co.kr",
@@ -83,7 +83,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "핸드폰 소액결제|컬쳐랜드,온라인 문화상품권 구매 다양한 결제 상품권 현금화",
+    title: "핸드폰 소액결제 | 컬쳐랜드,온라인 문화상품권 구매 다양한 결제 상품권 현금화",
     description:
       "핸드폰 소액결제 신용카드, 핸드폰결제 전용 24시간 실시간발권 신세계상품권,컬쳐랜드상품권,문화상품권등을 실시간 발권합니다",
     images: ["https://pintoss.co.kr/og-image.png"],
