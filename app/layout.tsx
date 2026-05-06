@@ -61,11 +61,9 @@ export const metadata: Metadata = {
     canonical: "https://pintoss.co.kr",
   },
   verification: {
-    google: "",
-    other: {
-      "",
-    },
-  },
+  google: "",
+  other: {},
+},
   openGraph: {
     title: "핸드폰 소액결제|컬쳐랜드,온라인 문화상품권 구매 다양한 결제 상품권 현금화",
     description:
