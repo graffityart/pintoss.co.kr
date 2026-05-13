@@ -60,9 +60,11 @@ export const metadata: Metadata = {
     canonical: "https://pintoss.co.kr",
   },
   verification: {
-  google: "",
-  other: {},
-},
+  google: "azcSAoSVydW7TGs_LJi1N8iCnJGZP81704AKwzGif50",
+  other: {
+      "naver-site-verification" content="37a117ff6475928f6ce764fbddf83ff62f6e2e7a",
+    },
+  },
   openGraph: {
     title: "핸드폰 소액결제 | 컬쳐랜드,온라인 문화상품권 구매 다양한 결제 상품권 현금화",
     description:
