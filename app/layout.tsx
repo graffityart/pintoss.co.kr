@@ -59,10 +59,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://pintoss.co.kr",
   },
+  
   verification: {
-  google: "azcSAoSVydW7TGs_LJi1N8iCnJGZP81704AKwzGif50",
-  other: {
-      "naver-site-verification" content="37a117ff6475928f6ce764fbddf83ff62f6e2e7a",
+    google: "azcSAoSVydW7TGs_LJi1N8iCnJGZP81704AKwzGif50",
+    other: {
+      "naver-site-verification": "37a117ff6475928f6ce764fbddf83ff62f6e2e7a",
     },
   },
   openGraph: {
