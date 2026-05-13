@@ -251,7 +251,7 @@ export default function PrivacyPage() {
                     <strong>E-MAIL:</strong> c0810@naver.com
                   </li>
                   <li>
-                    <strong>전화번호:</strong> 1544-4202
+                    <strong>전화번호:</strong> 010-9300-4202
                   </li>
                 </ul>
               </div>
