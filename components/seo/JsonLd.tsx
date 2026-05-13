@@ -5,8 +5,8 @@ export function OrganizationJsonLd() {
     "@type": "Organization",
     name: "핀토스몰",
     alternateName: "PinToss Mall",
-    url: "https://pin-toss.com",
-    logo: "https://pin-toss.com/logo.png",
+    url: "https://pin-toss.co.kr",
+    logo: "https://pin-toss.co.kr/logo.png",
     description:
       "상품권소액결제, 상품권카드결제를 이용해 컬쳐랜드 문화상품권 구글기프트카드 등 다양한 상품권을 24시간 빠르게 구매할 수 있는 상품권 전문 판매몰",
     address: {
@@ -53,7 +53,7 @@ export function WebSiteJsonLd() {
     "@type": "WebSite",
     name: "핀토스몰",
     alternateName: "PinToss Mall",
-    url: "https://pin-toss.com",
+    url: "https://pin-toss.co.kr",
     description:
       "상품권 휴대폰 소액결제, 신용 카드결제로 24시간 빠르게 구매할 수 있는 상품권 전문몰",
     publisher: {
@@ -217,10 +217,10 @@ export function LocalBusinessJsonLd() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Store",
-    "@id": "https://pin-toss.com/#organization",
+    "@id": "https://pin-toss.co.kr/#organization",
     name: "핀토스몰",
-    url: "https://pin-toss.com",
-    image: "https://pin-toss.com/logo.png",
+    url: "https://pin-toss.co.kr",
+    image: "https://pin-toss.co.kr/logo.png",
     description:
       "상품권 휴대폰 소액결제, 신용카드 결제로 24시간 빠르게 구매할 수 있는 상품권 전문몰",
     address: {
