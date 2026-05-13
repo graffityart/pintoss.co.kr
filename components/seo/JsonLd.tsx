@@ -8,7 +8,7 @@ export function OrganizationJsonLd() {
     url: "https://pin-toss.co.kr",
     logo: "https://pin-toss.co.kr/logo.png",
     description:
-      "상품권소액결제, 상품권카드결제를 이용해 컬쳐랜드 문화상품권 구글기프트카드 등 다양한 상품권을 24시간 빠르게 구매할 수 있는 상품권 전문 판매몰",
+      "핸드폰 소액결제,신용카드, 핸드폰결제 전용 24시간 실시간발권 신세계상품권,컬쳐랜드상품권,문화상품권등을 실시간 발권합니다",
     address: {
       "@type": "PostalAddress",
       streetAddress: "당감로17, 7동 906호(당감동)",
@@ -55,10 +55,10 @@ export function WebSiteJsonLd() {
     alternateName: "PinToss Mall",
     url: "https://pin-toss.co.kr",
     description:
-      "상품권 휴대폰 소액결제, 신용 카드결제로 24시간 빠르게 구매할 수 있는 상품권 전문몰",
+      "핸드폰 소액결제, 신용 카드결제로 24시간 빠르게 구매할 수 있는 상품권 전문몰",
     publisher: {
       "@type": "Organization",
-      name: "핀토스몰",
+      name: "핀토스mall",
     },
     inLanguage: "ko-KR",
   };
@@ -222,7 +222,7 @@ export function LocalBusinessJsonLd() {
     url: "https://pin-toss.co.kr",
     image: "https://pin-toss.co.kr/logo.png",
     description:
-      "상품권 휴대폰 소액결제, 신용카드 결제로 24시간 빠르게 구매할 수 있는 상품권 전문몰",
+      "핸드폰 소액결제, 신용 카드결제로 24시간 빠르게 구매할 수 있는 상품권 전문몰",
     address: {
       "@type": "PostalAddress",
       streetAddress: "당감로17, 7동 906호(당감동)",
