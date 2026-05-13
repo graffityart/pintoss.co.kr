@@ -924,10 +924,10 @@ export default function ProductDetailClient({
               </p>
               <p className="hidden md:block">
                 고객센터 주소 : 부산광역시 부산진구 당감로17, 7동 906호(당감동)
-                l 핀토스 고객센터 Tel:1544-4202
+                l 핀토스 고객센터 Tel: 010-9300-4202
               </p>
               <p className="hidden md:block">
-                민원담당자: 조문국 l 연락처: 1544-4202
+                민원담당자: 조문국 l 연락처: 010-9300-4202
               </p>
               <p className="text-[#BDBDBD] text-[10px] md:text-[16px]">
                 해당 사이트에서 판매되는 모든 상품에 환불 및 모든 민원의 책임은
@@ -967,7 +967,7 @@ export default function ProductDetailClient({
               </p>
               <div className="flex flex-col md:items-end">
                 <p className="text-[20px] font-bold text-[#0565FF] leading-[1.3] md:text-[32px]">
-                  1544-4202
+                  010-9300-4202
                 </p>
                 <p className="text-[14px] font-medium text-[#757575] leading-[1.3] md:text-[20px]">
                   10:00 - 18:00
